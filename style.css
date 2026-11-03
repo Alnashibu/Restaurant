@@ -1,0 +1,597 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: chocolate;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    background-color: rgb(6, 6, 6);
+    position: fixed;
+    z-index: 1;
+}
+#check{
+    display: none;
+}
+.icons{
+    font-size: 25px;
+    cursor: pointer;
+    position:absolute;
+    right: 5%;
+    display: none;
+}
+.navlinks {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(235, 228, 228);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.header {
+    text-decoration: none;
+    color: rgb(249, 245, 245);
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.link:hover {
+    color: rgb(173, 28, 28);
+    transition: 1s;
+}
+
+.description {
+    padding-top: 300px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkTK7boqO_8BqCPC_fSvOOZStHZwOMzLmbZ2hDVH7CrHrzkSHV-KlOjdPI&s=10);
+    background-position: bottom;
+    background-size: cover;
+}
+
+#deschead {
+    color: rgb(240, 242, 236);
+}
+
+#descpara {
+    color: rgb(246, 246, 235);
+}
+
+.descbutton {
+    font-size: 25px;
+    padding: 30px;
+    margin: 70px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(251, 249, 245, 0.162);
+}
+
+.descbutton:hover {
+    color: white;
+    transition: 1s;
+    transform: translateY(20px);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 8%;
+    gap: 40px;
+}
+
+#herotitle {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+}
+
+#heropara {
+    margin-bottom: 30px;
+    color: rgb(164, 97, 15);
+    font-size: 20px;
+    text-align: center;
+}
+
+#herotitle2 {
+    text-align: center;
+    padding: 8%;
+}
+
+#restaurantimage {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.herotext {
+    flex: 1;
+}
+
+.heroimage {
+    flex: 1;
+}
+
+.banner {
+    padding: 40px 8% 60px 8%;
+    margin: 20px 40px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(https://pub-aaa82e9851064d22b954c3ebbafc9ae6.r2.dev/legacy/webp/strawberry-layer-cake-with-whipped-cream-SdLpn6pcdSC93E27Uxmih.webp);
+    background-position: left;
+    background-size: cover;
+    border-radius: 20px;
+    background-attachment: fixed;
+}
+
+#bannerhead {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(154, 55, 73);
+}
+
+#bannerpara {
+    font-size: 40px;
+    margin-top: 40px;
+    color: rgb(154, 55, 73);
+}
+
+.special {
+    padding: 40px;
+    text-align: center;
+}
+
+#specialhead {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    padding: 5px;
+}
+
+#specialpara {
+    text-align: center;
+    font-size: 27px;
+    color: rgb(117, 114, 112);
+    margin-top: 10px;
+    padding: 25px;
+
+}
+
+.products {
+    padding: 0px 8% 0px 8%;
+}
+
+.productcontainer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+#cardimage {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.productcontainer {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#cardname {
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(246, 243, 243);
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+    left: 150px;
+    z-index: 1;
+}
+
+.reserve {
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+#reservehead1 {
+    font-weight: 1;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#reservehead2 {
+    color: black;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#reservepara {
+    font-size: 20px;
+    color: rgb(85, 83, 83);
+}
+
+.reservebox {
+    border: 1px solid;
+    padding: 40px 30px;
+    margin-top: 30px;
+    background: rgb(209, 202, 202);
+}
+
+.formrow {
+    width: 33%;
+    height: 60px;
+    padding: 15px;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    gap: 100%;
+}
+
+.reservebutton {
+    font-size: 25px;
+    padding: 30px;
+    margin: 70px;
+    color: black;
+}
+
+.abouthead {
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(254, 251, 251);
+    padding: 15%;
+    background: url(https://cdn.sanity.io/images/omvn0o2l/production/f233baf29268c61544c73a5ab2f9bee988318248-1536x1024.png?w=1920&q=75&auto=format&fit=max);
+    text-align: center;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 60px;
+}
+
+.missionvision {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.missions {
+    color: rgb(62, 2, 2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 20px;
+
+}
+
+.visions {
+    color: rgb(62, 2, 2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.Menuhead {
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+    color: rgb(254, 251, 251);
+    padding: 15%;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeB1k7RCYRHXAHDJ1FOLs68kDGOemi4gKvxSXUZpdp0eOcHNg8xADH62k&s=10);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+
+.menupage {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1300px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.menupage input {
+    display: none;
+}
+
+.menuleft {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menuleft label {
+    color: white;
+    background: black;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 300;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.menuleft label:hover {
+    background: rgb(228, 170, 90);
+}
+
+.menuright {
+    flex: 1;
+    display: block;
+}
+
+.menuright .NorthIndian{
+    display: none;
+}
+.menuright .SouthIndian{
+    display: none;
+}
+.menuright .Desserts{
+    display: none;
+}
+.menuright .signaturedishes{
+    display: none;
+}
+
+#NorthIndian:checked~.menuright .NorthIndian {
+    display: block;
+}
+
+#SouthIndian:checked~.menuright .SouthIndian {
+    display: block;
+}
+
+#Desserts:checked~.menuright .Desserts {
+    display: block;
+}
+
+#signaturedishes:checked~.menuright .signaturedishes {
+    display: block;
+}
+
+#NorthIndian:checked~.menuleft label[for="NorthIndian"]{
+    background: rgb(228, 170, 90);
+    color: black;
+}
+#SouthIndian:checked~.menuleft label[for="SouthIndian"]{
+    background: rgb(228, 170, 90);
+    color: black;
+}
+#Desserts:checked~.menuleft label[for="Desserts"]{background: rgb(228, 170, 90);
+    color: black;}
+#signaturedishes:checked~.menuleft label[for="signaturedishes"] {
+    background: rgb(228, 170, 90);
+    color: black;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item h4 {
+    color: rgb(231, 20, 17);
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.item p {
+    color: #4a0501;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.Galleryhead {
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+    color: rgb(254, 251, 251);
+    padding: 15%;
+    background: url(https://images8.alphacoders.com/107/thumb-1920-1072808.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+.contacthead {
+    font-size: 40px;
+    font-weight: 300;
+    display: flex;
+    color: rgb(254, 251, 251);
+    padding: 15%;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzufHIcn-VzB5U3B3v9j8dKAGeYYEtE_uahyQt-1ljxc28TkmHEVlR8djT&s=10);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 60px;
+}
+.contactsection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 50px;
+}
+.contactdetails{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.address{
+    display: flex;
+    gap: 40px;
+}
+#heads{
+    color: black;
+    font-size: 20px;
+}
+#paras{
+    color: grey;
+    font-size: 20px;
+}
+.addressleft{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.addressright{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.socailaicons{
+    display: flex;
+    justify-content:space-around;
+}
+.iconlink{
+    color: rgb(147, 60, 2);
+}
+.timecard {
+    width: 450px;
+    position:relative;
+}
+
+#timeimage {
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    background-color: rgb(1, 1, 1);
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+    width: 100%;
+}
+.footercontent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footeraddress{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.hours{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footercontact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footerpara{
+    color: antiquewhite;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#paras{
+    font-size: 15px;
+    color: rgb(116, 116, 112);
+}
+#heads{
+    color: rgb(131, 86, 32);
+}
+@media (max-width: 800px){
+    .navbar{
+        padding: 20px 5%;
+    }
+    .icons{
+        display: flex;
+    }
+    #cancelicon{
+        display: none;
+    }
+    #check:checked~.icons #menuicon{
+        display: none;
+    }
+    #check:checked~.icons #cancelicon{
+        display: block;
+    }
+    .navlinks{
+        position: absolute;
+        display: none;
+        top: 100%;
+        width: 100%;
+        left: 0%;
+        line-height: 30px;
+        background-color: rgb(48, 51, 50);
+        height: fit-content;
+    }
+    .links{
+        text-align:center;
+        margin: 5px 0px;
+    }
+    #check:checked~.navlinks{
+        display: block;
+        height: fit-content;
+    }
+    footer{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
